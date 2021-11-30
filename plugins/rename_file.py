@@ -66,7 +66,7 @@ async def rename_doc(bot, update):
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked":
-               await update.reply_text(" Sorry,You've Been Banned From Using Meh!")
+               await update.reply_text(" Sorry,You've Been Banned From Using Me!")
                return
         except UserNotParticipant:
             await update.reply_text(
@@ -163,7 +163,7 @@ async def rename_doc(bot, update):
                 caption=f"{caption_text2}",
                 parse_mode = "html",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="𝚂ᴜᴘᴘᴏʀᴛ 𝙲ʜᴀɴɴᴇʟ", url=f"https://t.me/Mai_bOTs")]
+                    [ InlineKeyboardButton(text="𝚂ᴜᴘᴘᴏʀᴛ 𝙲ʜᴀɴɴᴇʟ", url=f"https://t.me/Jimi_Bots")]
               ]), 
                 reply_to_message_id=update.reply_to_message.message_id,
                 progress=progress_for_pyrogram,
